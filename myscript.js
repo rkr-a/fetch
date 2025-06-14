@@ -1,4 +1,4 @@
-var rollV, nameV, genderV, addressV, usernameV, passwordV ;
+var rollV, nameV, genderV, addressV, usernameV, emailV ;
 
 function readFom() {
   rollV = document.getElementById("roll").value;
@@ -6,7 +6,7 @@ function readFom() {
   genderV = document.getElementById("gender").value;
   addressV = document.getElementById("address").value;
   usernameV = document.getElementById("username").value;
-  passwordV = document.getElementById("email").value;
+  emailV = document.getElementById("email").value;
   console.log(rollV, nameV, addressV, genderV, usernameV, emailV);
 }
 
@@ -45,7 +45,7 @@ document.getElementById("read").onclick = function () {
       document.getElementById("gender").value = snap.val().gender;
       document.getElementById("address").value = snap.val().address;
       document.getElementById("username").value = snap.val().username;
-      document.getElementById("email").value = snap.val().password;
+      document.getElementById("email").value = snap.val().email;
     });
 };
 
